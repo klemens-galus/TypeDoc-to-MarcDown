@@ -32,7 +32,6 @@ for module in modules:
     reallink = module.link.rsplit('/', 1)[-1].replace(".html", ".md")
     sf = open('/usr/src/app/mdDock/modules/'+reallink,'w')
     #print(module.link)
-    print(module.link)
     print(module.name)
     checkClasses(module)
     checkVars(module)
